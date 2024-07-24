@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="web that will hep; to find any informations about any medicen">
+        <link rel="icon" href="blob:https://web.whatsapp.com/a9a7a556-fbbf-4eb8-979a-68389731947f" type="image/x-icon"> <!--fix the logo-->
+        <link rel="stylesheet" href="medicir.css">
+        <title>Medicir</title>
+        <style>
+             /* Styles for phones */
+@media screen and (max-width: 767px) {
+}
+
+/* Styles for tablets and larger screens in portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+}
+
+/* Styles for tablets and larger screens in landscape */
+@media screen and (min-width: 768px) and (max-width: 3119px) and (orientation: landscape) {
+}
+
+/* Styles for larger screens (desktops) */
+@media screen and (min-width: 1025px) {
+}
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <h1 class="logo">Medicir.</h1>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="#welcome">Home</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <!-- <li><a href="#Profile">Profile</a></li> -->
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <article id="welcome">
+            <div class="Welcome-style">
+                <h1>Welcome To Medicir.</h1>
+                <p>We Are Here To Help You Take Care Of Yourself.</p>
+            </div>
+        </article>
+
+        <article id="SERVIC">
+            <div class="servic">
+                <h2>servic</h2>
+                <ul>
+                    <li>Search About Your Medicine</li>
+                    <p>write your medicine name, and get all the informations.</p>
+                    <li>make your own medical file</li>
+                    <p>put all your medicines in a file, with the prescription.</p>
+                </ul>
+            </div>
+        </article>
+
+        <article id="search">
+            <div class="search">
+                <h1>Search About Any Medicine</h1>
+                <input type="text" id="searchInput" placeholder="Enter medication name">
+                <button onclick="searchMedication()">Search</button>
+                <script src="medicir.js"></script>
+                <div id="result" class="result"></div>
+            </div>
+        </article>
+
+        <article id="About">
+            <div class="about-style">
+                <h2>About</h2>
+                <hr>
+                <p>Welcome to Medicir, your trusted resource for comprehensive and reliable information on medications.<br>
+                 Our mission is to empower individuals with the knowledge they need to make informed decisions about their health and well-being.<br>
+                 Whether you're a patient, caregiver, healthcare professional, or simply curious about a particular medicine,<br>
+                 MedSearch is here to provide you with accurate and up-to-date information.</p>
+            </div>
+        </article>
+
+
+        <!-- <article class="Profile" id="Profile">
+            <h1 style="font-size: 50px;"> Make Your File</h1>
+            <form>
+                <P>
+                    <div class="input-box">
+                        <input type="text" class="info-input" required>
+                        <label class="info-label">FIRST NAME</label>
+                    </div>
+                </P>
+                <P>
+                    <div class="input-box">
+                        <input type="text" class="info-input" required>
+                        <label class="info-label">LAST NAME</label>
+                    </div>
+                </P>
+                <P>
+                    <div class="input-box">
+                        <input type="email" class="info-input" required>
+                        <label class="info-label"> EMAIL</label>
+                    </div>
+                </P>
+                <p>
+                    <div class="input-box">
+                        <input type="password" class="info-input" required>
+                        <label class="info-label">PASSWORD</label>
+                    </div>
+                </p>
+                    <div class="input-box">
+                        <input type="file" class="info-input" required>
+                        <label class="info-label">UPLOAD YOUR PRESCRIPTION</label>
+                    </div>
+                </P> 
+                <legend>Send Me A Note:</legend>
+                <label for="message">Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>
+                <div class="button">
+                    <button type="submit" class="submit" id="submit">Submit</button>
+                    <?php include 'medicir-form.php'; ?>
+                </div>
+            </form>
+        </article> -->
+
+        <article class="footer">
+            <footer>
+                <div class="like-logo">
+                <p>Medicir.</p>
+            </div>
+            <div class="no-idea">
+                <p>Your Health, Our priority.</p>
+            </div>
+            </footer>
+        </article>
+
+
+        <script src="medicir.js"></script>
+
+
+    </body>
+</html>

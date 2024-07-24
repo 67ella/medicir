@@ -1,0 +1,248 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(230, 229, 229);
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.Welcome-style {
+    background-color: rgb(230, 229, 229);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+.servic {
+    background: rgb(22, 21, 21);
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+}
+
+ul li p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+.search {
+    background-color: rgb(230, 229, 229);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 300px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.result h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.result .error {
+    color: red;
+}
+
+/* Styling for the submit button */
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; /* Aligns the button to the left in the form */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+.about-style {
+    background-color: rgb(22, 21, 21);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.Profile {
+    background-color: rgb(230, 229, 229);
+    padding-top: 90PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    gap: 2rem;
+}
+
+
+form {
+    display: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.input-box {
+    position: relative;
+    width: 300px;
+}
+
+.info-input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #535252;
+    outline: none;
+    background: transparent;
+    color: rgb(24, 23, 23);
+    font-size: 1.8rem;
+}
+
+.info-label {
+    position: absolute;
+    left: 0;
+    padding: 10px 5px;
+    color: rgba(24,25, 25, 0.5);
+    font-size: 1.4rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.info-input:valid ~ label,
+.info-input:focus ~ label {
+    transform: translateY(-1.5rem);
+    color: rgb(24, 23, 23);
+    font-size: 0.75em;
+}
+
+
+/* Styling specifically for the file input to ensure it is distinct */
+.input-box input[type="file"] {
+    padding: 0;
+    border: none;
+}
+
+.input-box input[type="file"] + .info-label {
+    margin-bottom: 80px;
+    font-size: 16px;
+    color: #333;
+}
+
+form .input-box input[type="file"] {
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: rgb(230, 229, 229);
+    padding-top: 10px;
+}
+
+.like-logo {
+    text-align: left;
+    font-size: 35px;
+    display: inline-block;
+    width: 900px;
+}
+
+.no-idea {
+    text-align: right;
+    font-size: 35px;
+    display: inline-block;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border: none;
+    border-radius: 19px;
+    width: 110px;
+    height: 36px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.submit:hover {
+    opacity: 0.9;
+}
+
+.submit:active {
+    opacity: 0.7;
+}
